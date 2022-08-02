@@ -15,7 +15,7 @@
 namepace XNN
 {
     //@brief BlobDesc blob data info
-    struct PUBLIC BlobDesc
+    struct PUBLIC BlobDesc final
     {
         //@ device_type describes device cpu, gpu, ...
         DeviceType device_type = DEVICE_NAIVE;
@@ -31,7 +31,7 @@ namepace XNN
         std::string description(bool all_message = false);
     };
 
-    struct PUBLIC BlobHandle
+    struct PUBLIC BlobHandle final
     {
         void *base = nullptr;
         uint64_t bytes_offset = 0;
@@ -39,7 +39,7 @@ namepace XNN
 
     class BlobImpl;
 
-    class PUBLIC Blob
+    class PUBLIC Blob final
     {
     public:
         explicit Blob(BlobDesc desc);

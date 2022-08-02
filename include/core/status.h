@@ -128,7 +128,7 @@ namespace XNN
 
     };
 
-    class PUBLIC Status
+    class PUBLIC Status final
     {
     public:
         ~Status();
