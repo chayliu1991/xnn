@@ -1,10 +1,10 @@
 #include <iomanip>
 #include <sstream>
 
-#include "tnn/core/abstract_device.h"
-#include "tnn/core/blob_impl.h"
-#include "tnn/memory_manager/blob_memory_size_info.h"
-#include "tnn/utils/data_flag_utils.h"
+#include "xnn/core/abstract_device.h"
+#include "xnn/core/blob_impl.h"
+#include "xnn/memory_manager/blob_memory_size_info.h"
+#include "xnn/utils/data_flag_utils.h"
 
 namespace XNN
 {
